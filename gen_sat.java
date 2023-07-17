@@ -3,7 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.FileOutputStream;
 
-
+//generates a 3sat problem as a text file to use as input for the different sat algorithms
 public class gen_sat {
     public static void generate_problem() throws IOException{
         FileOutputStream outputStream = new FileOutputStream("./sat.txt");
