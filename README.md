@@ -1,11 +1,14 @@
 # approxschemes_heuristics
 An assortment of coding solutions for problems assigned in the class Computer Computability, Complexity and Heuristics taught by Professor Tom O'Connell at Skidmore College in Spring 2023.
 
-The final probject for class was to compare the runtimes of 2 groups of algorithms(some dynamic and optimal, some approximation schemes) on 100 randomly generated instances of their problem, and test an approximation algorithm for minimum TSP./n
+The final probject for class was to compare the runtimes of 2 groups of algorithms(some dynamic and optimal, some approximation schemes) on 100 randomly generated instances of their problem, and test an approximation algorithm for minimum TSP.
+
 Max3SAT algorithms:
-The algorithms compared for max3SAT were DPLL, gsat, max3SAT 7/8 approximation scheme, and Randomized Rounding./n
+The algorithms compared for max3SAT were DPLL, gsat, max3SAT 7/8 approximation scheme, and Randomized Rounding.
+
 Max knapsack:
-The algorithms compared for max knapsack were Dynamic knapsack, Dynamic minCost, Greedy knapsack, and mincost approximation scheme/n
+The algorithms compared for max knapsack were Dynamic knapsack, Dynamic minCost, Greedy knapsack, and mincost approximation scheme.
+
 TSP:
 The two-approximation for the Traveling Salesman Problem using kruskal's algorithm.
 
