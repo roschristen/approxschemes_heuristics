@@ -1,6 +1,7 @@
 import java.util.*;
 
 public interface gsat {
+    //literal and clause classes
     public static class literal{
         String name;
         Boolean value;
@@ -23,6 +24,7 @@ public interface gsat {
         this.litlist = litlist;
        }
     }
+    //debugging fxn
     public static void print_clauseList(clause[] clauselist){
         System.out.println("top");
       String s = "";
@@ -37,11 +39,13 @@ public interface gsat {
       }
       System.out.println("bottom");
   }
+    //fxn to set the literal list of a clause
   public static void set_litlist(clause c, literalWrapper[] litlist){
     literalWrapper[] temp = new literalWrapper[litlist.length];
     System.arraycopy(litlist, 0, temp, 0, litlist.length);
     c.litlist = temp;
   }
+    //problem generating fxn for debugging
     public static int gen3SAT(clause[] clauseList, literal[] litList){
         // Random ran = new Random();
         // literal[] litList = new literal[litNum];
@@ -117,20 +121,9 @@ public interface gsat {
         }
         return max; 
     }
-
+//main GSAT algorithm fxn
     public static Boolean[] gsatAlg(clause[] clauseList, literal[] litlist, int flipnum){
-        // //print out clauselist(for debugging)
-        // for(int i = 0; i<clauseList.length; i++){
-        //     System.out.println("Clause " + i + " :");
-        //     String c = "(";
-        //     for(int k = 0; k<3; k++){
-        //         c += clauseList[i].litlist[k].name;
-        //         c+= ",";
-        //     }
-        //     c += ")";
-        //     System.out.println(c);
-        // }
-
+        
         //random variable declaration
         Random ran = new Random();
         //track the current best truth assignment
